@@ -3,6 +3,7 @@ import backlogend.StoryStatus
 import backlogend.StoryTheme
 import backlogend.StoryType
 import backlogend.User
+import backlogend.TheUser
 
 class BootStrap {
 
@@ -35,6 +36,8 @@ class BootStrap {
 		new StoryTheme(description:"Iteration 3").save()
 		new StoryTheme(description:"Iteration 4").save()
 		new StoryTheme(description:"Iteration 5").save()
+
+		new TheUser(username:"admin", password:"admin", enabled:true).save()
 	}
 	def destroy = {
 	}
