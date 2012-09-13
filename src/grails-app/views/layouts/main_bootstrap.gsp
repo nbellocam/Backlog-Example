@@ -59,9 +59,9 @@
               </li>
             </ul>
             <sec:ifNotLoggedIn>
-            <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
+            <form class="navbar-form pull-right" action="${postUrl}" method="post">
+              <input name='j_username' class="span2" type="text" placeholder="Email">
+              <input name='j_password' class="span2" type="password" placeholder="Password">
               <button type="submit" class="btn">Sign in</button>
             </form>
             </sec:ifNotLoggedIn>
