@@ -58,11 +58,21 @@
                 </ul>
               </li>
             </ul>
+            <sec:ifNotLoggedIn>
             <form class="navbar-form pull-right">
               <input class="span2" type="text" placeholder="Email">
               <input class="span2" type="password" placeholder="Password">
               <button type="submit" class="btn">Sign in</button>
             </form>
+            </sec:ifNotLoggedIn>
+            <sec:ifLoggedIn>
+            <div class="nav-collapse pull-right">
+                <ul class="nav">
+                    <li><a href="#">¡Bienvenido <sec:loggedInUserInfo field="username" />!</a></li>
+                    <li><g:link controller="logout">Logout</g:link></li>
+                </ul>
+            </div>
+            </sec:ifLoggedIn>
           </div><!--/.nav-collapse -->
         </div>
       </div>
