@@ -40,7 +40,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Backlog</a>
+          <g:link class="brand" controller="home">Backlog</g:link>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><g:link controller="home">Home</g:link></li>
