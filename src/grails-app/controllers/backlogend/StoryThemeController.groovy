@@ -1,7 +1,9 @@
 package backlogend
 
 import org.springframework.dao.DataIntegrityViolationException
+import grails.plugins.springsecurity.Secured
 
+@Secured("hasRole('MANAGE_USER_THEMES')")
 class StoryThemeController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
